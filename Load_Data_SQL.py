@@ -14,3 +14,8 @@ df = spark.read.format("csv").load(sys.argv[1])
 
 df.printSchema()
 df.show()
+
+
+
+def add(x,y):
+    return x+y

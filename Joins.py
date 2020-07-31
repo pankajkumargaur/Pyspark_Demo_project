@@ -40,3 +40,6 @@ empDF.alias("emp1").join(empDF.alias("emp2"), \
             col("emp2.emp_id").alias("superior_emp_id"), \
             col("emp2.name").alias("superior_emp_name")) \
     .show(truncate=False)
+
+
+empDF.coalesce()
